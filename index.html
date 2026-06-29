@@ -9,44 +9,70 @@
 </head>
 
 
+<script>
+    function mostrarAba(id) {
+      const secoes = document.querySelectorAll('section');
+      secoes.forEach(s => s.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+</body>
+
 <body>
 
   <header>
     <h1>Ana Luisa Milhomem Martins</h1>
-      <img src="assets/foto_minha.jpg" alt="Foto de Ana Luisa">
+      <img src="fotos/foto_minha.jpg" alt="Foto de Ana Luisa">
     <p>Estudante de Engenharia Elétrica - UFMG</p>
   </header>
 
+   <nav>
+  <a href="#" onclick="mostrarAba('sobre_mim')">Sobre Mim</a>
+  <a href="#" onclick="mostrarAba('meus_projetos')">Meus Projetos</a>
+  <a href="#" onclick="mostrarAba('contato')">Contato</a>
+</nav>
+
+
   <main>
 
-    <section id="sobre_mim">
+   <section id="sobre_mim" style="display:none">
       <h2>Sobre Mim</h2>
       <h3>Formação: </h3>
-      <p>- Estudei no Colégio Santo Antônio.</p>
-      <p>- Fiz um intercâmbio de 10 dias para a Irlanda, onde estudei um pouco sobre empreendedorismo e inovação na Trinity College Dublin.</p>
-      <p>- Fiz outro intercâmbio de 20 dias no Canadá, onde estudei sobre engenharia na University of British Columbia.</p>
-      <p>- Participei de muitas olimpíadas de matematica, fisica e biologia durante o ensino médio, ganhando algumas medalhas e menções honrosas.</p>
-      <p>- Atualmente estou cursando Engenharia Elétrica na UFMG.</p>
-      <p>- Estou no programa de trainee da ijunior.</p>
+      <ul>
+      <li>Estudei no Colégio Santo Antônio.</li>
+      <li>Fiz um intercâmbio de 10 dias para a Irlanda, onde estudei um pouco sobre empreendedorismo e inovação na Trinity College Dublin.</li>
+      <li>Fiz outro intercâmbio de 20 dias no Canadá, onde estudei sobre engenharia na University of British Columbia.</li>
+      <li>Participei de muitas olimpíadas de matematica, fisica e biologia durante o ensino médio, ganhando algumas medalhas e menções honrosas.</li>
+      <li>Atualmente estou cursando Engenharia Elétrica na UFMG.</li>
+      <li>Estou no programa de trainee da ijunior.</li>
+      </ul>
       <h3>Hobbies:</h3>
-      <p>- Adoro assistir filmes e séries, sair com amigas e namorado, gosto de cozinhar e jogar tênis.</p>
+      <ul>
+        <li>Adoro assistir filmes e séries, sair com amigas e namorado, gosto de cozinhar e jogar tênis.</li>
+      </ul>
      <div class="fotos-hobbies">
-    <img src="assets/foto_gabi.jpg" alt="Foto com amiga">
-    <img src="assets/foto_pedro.jpg" alt="Foto com namorado">
+    <img src="fotos/foto_gabi.jpg" alt="Foto com amiga">
+    <img src="fotos/foto_pedro.jpg" alt="Foto com namorado">
     </div>
       <h3>Curiosidades:</h3>
-      <p>- Sonho em viajar para muitos lugares do mundo e adoro mergulhar com cilindrto.</p>
+      <ul>
+        <li>Sonho em viajar para muitos lugares do mundo e adoro mergulhar com cilindrto.</li>
+      </ul>
+       <img src="fotos/foto_mergulho.jpg" alt="Mergulho" class="foto-curiosidade">
     </section>
 
-    <section id="meus_projetos">
+    <section id="meus_projetos" style="display:none">
       <h2>Meus Projetos</h2>
-      <p> - Desenvolvi um jogo de asteroides</p>
-      <p>- Fiz um contador de produtos para linha de produção</p>
-      <p>- Fiz um protótipo de um site para a Orguel no projeto da ENG-200 </p>
-      <p>- Criei um site pessoal para mostrar meu portfólio para a ijunior</p>
+      <ul>
+        <li>Desenvolvi um jogo de asteroides</li>
+        <li>Fiz um contador de produtos para linha de produção</li>
+        <li>Fiz um protótipo de um site para a Orguel no projeto da ENG-200 </li>
+        <li>Criei um site pessoal para mostrar meu portfólio para a ijunior</li>
+      </ul>
     </section>
 
-    <section id="contato">
+<section id="contato" style="display:none">
       <h2>Contato</h2>
       <p>Email: analuisa.milhomem@gmail.com</p>
       <p>Telefone: (31) 98340-4106</p>

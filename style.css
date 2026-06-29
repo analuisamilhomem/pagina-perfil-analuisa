@@ -28,7 +28,7 @@ header img {
 main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0;
 }
 
 section {
@@ -46,7 +46,7 @@ h2 {
 
 h3 {
   color: #1a4a5a;
-  margin-top: 15px;
+  margin-top: 50px;
   margin-bottom: 8px;
 }
 
@@ -68,10 +68,56 @@ p {
   object-fit: cover;
 }
 
+.foto-curiosidade {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 footer {
   background-color: #0d5c63;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 20px;
+}
+
+nav {
+  background-color: #0d5c63;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #0d5c63;
+}
+
+main {
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d5c63;
+  color: #1a2e35;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
