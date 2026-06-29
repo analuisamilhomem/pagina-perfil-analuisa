@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #1a2e35;
+}
+
+header {
+  background-color: #0d5c63;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 5px solid #0d5c63;
+}
+
+h2 {
+  color: #0d5c63;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #1a4a5a;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.fotos-hobbies {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.fotos-hobbies img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #0d5c63;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
